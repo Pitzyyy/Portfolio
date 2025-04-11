@@ -10,33 +10,67 @@
 </head>
 <body>
   <header>
-    <h1>Hi!, I'm Jun Reneir Orense</h1>
-    <nav>
-      <a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a>
-      <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
-      <a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a>
-      <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
-    </nav>
+    <div class="header-container">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <nav class="nav-container">
+        <a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+        <a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a>
+        <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+      </nav>
+    </div>
   </header>
 
   <!-- About me -->
   <section id="about">
-    <h2>About Me</h2>  <!-- Fixed the backtick typo -->
-    <p>Write a short bio here.</p>
+    <div class="about-container">
+      <!-- Left Column -->
+      <div class="about-left">
+        <h2>About Me</h2>
+        <p>
+          I'm <strong>Jun Reneir Orense</strong>, a passionate web developer with a knack for creating modern, responsive, and user-friendly websites. I specialize in front-end development and love solving complex problems with clean and efficient code.
+        </p>
+        <div class="skills">
+          <span><i class="fas fa-code"></i> HTML</span>
+          <span><i class="fas fa-paint-brush"></i> CSS</span>
+          <span><i class="fas fa-laptop-code"></i> JavaScript</span>
+          <span><i class="fab fa-react"></i> React</span>
+          <span><i class="fab fa-node-js"></i> Node.js</span>
+          <span><i class="fas fa-database"></i> MongoDB</span>
+        </div>
+      </div>
+      <!-- Right Column -->
+      <div class="about-right">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+      </div>
+    </div>
   </section>
-
+  
   <section id="projects">
-    <h2>Projects</h2>
+  <h2>Projects</h2>
+  <div class="projects-grid">
     <div class="project-card">
+      <img src="project1.jpg" alt="Project 1" class="project-img" />
       <h3>Project Name</h3>
       <p>Description of the project.</p>
     </div>
-  </section>
+    <div class="project-card">
+      <img src="project2.jpg" alt="Project 2" class="project-img" />
+      <h3>Project Name</h3>
+      <p>Description of the project.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-  </section>
+<section id="contact">
+  <h2>Contact</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
   <script src="script.js"></script>
 </body>
