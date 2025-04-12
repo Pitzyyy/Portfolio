@@ -7,44 +7,116 @@
   <link rel="stylesheet" href="styles.css" />
   <!-- Add Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
+
     <div class="header-container">
-      <img src="logo.png" alt="Logo" class="logo" />
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="logo" />
+      </div>
       <nav class="nav-container">
-        <a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a>
-        <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
-        <a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a>
-        <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+        
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <!-- About me -->
-  <section id="about">
-    <div class="about-container">
-      <!-- Left Column -->
-      <div class="about-left">
-        <h2>About Me</h2>
-        <p>
-          I'm <strong>Jun Reneir Orense</strong>, a passionate web developer with a knack for creating modern, responsive, and user-friendly websites. I specialize in front-end development and love solving complex problems with clean and efficient code.
-        </p>
-        <div class="skills">
-          <span><i class="fas fa-code"></i> HTML</span>
-          <span><i class="fas fa-paint-brush"></i> CSS</span>
-          <span><i class="fas fa-laptop-code"></i> JavaScript</span>
-          <span><i class="fab fa-react"></i> React</span>
-          <span><i class="fab fa-node-js"></i> Node.js</span>
-          <span><i class="fas fa-database"></i> MongoDB</span>
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="greeting">Hello there,</span>
+        <h1>I'm Jun Reneir Orense</h1>
+        <p class="hero-description">A BSIT Student specializing in Web Development and Programming</p>        <div class="cta-buttons">
+          <a href="#about" class="cta-button">Learn More About Me</a>
+          <a href="#projects" class="cta-button secondary">View My Work</a>
         </div>
-      </div>
-      <!-- Right Column -->
-      <div class="about-right">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
       </div>
     </div>
   </section>
+  </section>
+  <section id="about">
+    <h1 class="section-title">About Me</h1>
+    <div class="about-container">
+        <!-- Left Column -->
+        <div class="about-left">
+            <span class="nickname">Hi, I'm Jun!</span>
+            <div class="about-description">
+                <p class="about-paragraph">
+                    As a passionate third-year BSIT student at the University of Batangas, I blend creativity with technical expertise to transform innovative ideas into reality. My journey in web development is driven by a deep curiosity and commitment to creating intuitive, user-friendly applications that make a difference.
+                </p>
+                <p class="about-paragraph">
+                    Currently exploring the vast landscape of software development, I combine my academic foundation with hands-on project experience. My approach focuses on writing clean, efficient code while staying current with emerging technologies and industry best practices.
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="about-right">
+            <div class="skills-container">
+                <h2>Technical Skills</h2>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>HTML</span>
+                        <span>45%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 45%;">45%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>CSS</span>
+                        <span>39%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 39%;">39%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Java</span>
+                        <span>32%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 32%;">32%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>PHP</span>
+                        <span>41%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 41%;">41%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Database</span>
+                        <span>47%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 47%;">47%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CV Button moved outside of columns -->
+    <div class="cv-button-container">
+        <a href="/path/to/your/cv.pdf" class="cv-button">
+            <i class="fas fa-file-alt"></i> Download CV
+        </a>
+    </div>
+</section>
   
   <section id="projects">
   <h2>Projects</h2>
